@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <!--<item-->
+            <!--android:id="@+id/home"-->
+            <!--android:icon="@drawable/home_t"-->
+            <!--android:title="HOME" />-->
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="DASHBOARD" />
+        <item
+            android:id="@+id/project"
+            android:icon="@drawable/ic_project"
+            android:title="PROJECT" />
+        <item
+            android:id="@+id/all_tree"
+            android:icon="@drawable/ic_tree_with_thin_branches_covered_by_leaves"
+            android:title="ALL TREE PLANTATIONS DETAILS" />
+
+        <!--<item-->
+            <!--android:id="@+id/search"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="SEARCH PROJECT" />-->
+
+        <item
+            android:id="@+id/po_mou"
+            android:icon="@drawable/ic_ecology"
+            android:title="ALL MASTER" />
+
+        <item
+            android:id="@+id/change_password"
+            android:icon="@drawable/password_imga"
+            android:title="CHANGE PASSWORD" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>

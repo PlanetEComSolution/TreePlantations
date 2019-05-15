@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINANCIAL YEAR"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <!-- style="@style/Widget.AppCompat.Spinner.Underlined"-->
+        <AutoCompleteTextView
+            android:id="@+id/fin_yer"
+           android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="FINANCIAL YEAR"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NTPC PROJECT CODE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <AutoCompleteTextView
+            android:id="@+id/project_code"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="NTPC PROJECT CODE"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROJECT NAME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <AutoCompleteTextView
+            android:id="@+id/project_name"
+android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="PROJECT NAME"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGION NAME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <AutoCompleteTextView
+            android:id="@+id/region_name"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="REGION NAME"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATE NAME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <AutoCompleteTextView
+            android:id="@+id/state_name"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="STATE NAME"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIVISION NAME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <AutoCompleteTextView
+            android:id="@+id/division_name"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="DIVISION NAME"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RANGE NAME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+        <AutoCompleteTextView
+            android:id="@+id/range_name"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="RANGE NAME"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/land_parcels_code"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="LAND PARCELS CODE"
+            android:textColorHighlight="#e000"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/search"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Search"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

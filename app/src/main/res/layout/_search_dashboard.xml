@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+            android:id="@+id/search"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="Search"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#FFF" />
+
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="#FFF" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="detail"
+            type="com.planet.treeplantations.models.Details_Responce_Model"/>
+    </data>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardElevation="7sp"
+                card_view:cardUseCompatPadding="true"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LAND PARCELS CODE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.projectName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NTPC PROJECT CODE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.projectCodeName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PO/MOU NUMBER"
+                            android:textColor="@color/colorPrimary1"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.POMOUNumber}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="REGION NAME"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.regionName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="STATE NAME"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.stateName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="DIVISION NAME"
+                            android:textColor="@color/colorPrimary1"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@{detail.divisionName}"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="RANGE NAME"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.rangeName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LAND TYPE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.landTypeName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LAND PARCEL AREA"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.landArea}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TREE SPECIES"
+                            android:textColor="@color/colorPrimary1"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.treeSpecies}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NO OF PLANT"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.noOfPlant}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LATITUDE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.latitude}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LONGITUDE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.longitude}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT COST"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.projectCost}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NAME OF AGENCY"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.agency}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL YEARS OF MAINTENANCE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.yearOfMaintence}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BUDGET HEAD"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.budgetHeadName}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS APPROVED"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.fundsApproved}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FINANCIAL YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.financialYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROJECT COST"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.projectCost}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DATE FROM"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.datefrom}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DATE TO"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.dateTo}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UPLOADING DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.uploadingDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="YEAR OF PLANTATION"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.yearofPlantation}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UTILIZATION CERTIFICATE FIRST YEAR/ PLANTATION YEAR RUPEES"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.utilizationCertificateFirstYearRupees}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UTILIZATION CERTIFICATE SECOND YEAR RUPEES"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.utilizationCertificateSecondYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UTILIZATION CERTIFICATE THIRD YEAR RUPEES"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.utilizationCertificatethird}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UTILIZATION CERTIFICATE FOURTH YEAR RUPEES"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.utilizationCertificateFourthYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UTILIZATION CERTIFICATE FIFTH YEAR RUPEES"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.utilizationCertificateFifthYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UTILIZATION CERTIFICATE SIXTH YEAR RUPEES"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.utilizationCertificateSixthYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS RELEASED FIRST YEAR/ PLANTATION YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.firstYearFundReleaseDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FIRST YEAR/ PLANTATION YEAR FUND RELEASED DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.yearofPlantation}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS RELEASED SECOND YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.secondYearFund}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SECOND YEAR FUND RELEASED DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.secondYearFundReleaseDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS RELEASED THIRD YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.thirdYearFund}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIRD YEAR FUND RELEASED DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.thirdYearFundReleaseDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS RELEASED 4TH YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.fourthYearFund}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4TH YEAR FUND RELEASED DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.fourthYearFundReleaseDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS RELEASED FIFTH YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.fifthYearFund}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FIFTH YEAR FUND RELEASED DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.fifthYearFundReleaseDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL FUNDS RELEASED SIXTH YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.sixthYearFund}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SIXTH YEAR FUND RELEASED DATE"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.secondYearFundReleaseDate}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                </LinearLayout>
+<!---->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SURVIVAL % FIRST YEAR/ PLANTATION YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.survivalPercentageFirstYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SURVIVAL % SECOND YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.survivalPercentageSecondYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SURVIVAL % THIRD YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.survivalPercentageThirdYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SURVIVAL % FOURTH YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.survivalPercentageFourthYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SURVIVAL % FIFTH YEAR"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.survivalPercentageFifthYear}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:orientation="horizontal">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="SURVIVAL % SIXTH YEAR"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textColor="@color/colorPrimary1" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@{detail.s}"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#000" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="REMARKS"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimary1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{detail.remarks}"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/card_view"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:text="Show Location"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+</layout>

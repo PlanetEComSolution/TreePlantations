@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="pdetail"
+            type="com.planet.treeplantations.models.Project_Details_Model"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Land Parcels Code"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.projectName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NTPC Project Code"
+                                android:textAllCaps="false"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.projectCodeName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="PO/MOU Number"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.POMOUNumber}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Region Name"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.regionName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="State Name"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.stateName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Division Name"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.divisionName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Range Name"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.rangeName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Land Type"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.landTypeName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Land Parcel Area"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.landArea}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tree Species"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.treeSpecies}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="No Of Plant"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.noOfPlant}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Latitude"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.latitude}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Longitude"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.longitude}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Project Cost"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.projectCost}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Name Of Agency"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.agency}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Total Years Of Maintenance"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.yearOfMaintence}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Budget Head"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.budgetHeadName}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Total Funds Approved"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorPrimary1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{pdetail.fundsApproved}"
+                                android:layout_weight="1"
+                                android:textSize="15sp"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:layout_below="@+id/card_view"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:text="Show Location"
+            />
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
